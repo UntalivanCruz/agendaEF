@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ivancruz/Documents/Progra4/agenda/agenda.csproj": {}
+  },
+  "projects": {
+    "/Users/ivancruz/Documents/Progra4/agenda/agenda.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ivancruz/Documents/Progra4/agenda/agenda.csproj",
+        "projectName": "agenda",
+        "projectPath": "/Users/ivancruz/Documents/Progra4/agenda/agenda.csproj",
+        "packagesPath": "/Users/ivancruz/.nuget/packages/",
+        "outputPath": "/Users/ivancruz/Documents/Progra4/agenda/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ivancruz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/v3/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
