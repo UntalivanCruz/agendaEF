@@ -1,25 +1,47 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace agenda.Models;
 
 public class Persona
 {
-    public Guid personaId {get;set;}
-    public string ?nombre {get;set;}
-    public string ?apellido {get;set;}
-    public string ?alias {get;set;}
-    public DateOnly fechaNac {get;set;}
-    public Sexo sexo {get;set;}
-    public EstadoCivil estadoCivil {get;set;}
-    public string ?correo {get;set;}
-    public virtual ICollection<Telefono> ?Telefonos {get;set;}
+    [Key]
+    public Guid PersonaId { get; set; }
+
+    [Required]
+    [MaxLength(250)]
+    public string? Nombre { get; set; }
+
+    [Required]
+    [MaxLength(250)]
+    public string? Apellido { get; set; }
+
+    [MaxLength(100)]
+    public string? Alias { get; set; }
+
+    public DateOnly FechaNac { get; set; }
+
+    public Sexo Sexo { get; set; }
+
+    public EstadoCivil EstadoCivil { get; set; }
+
+    public string? Correo { get; set; }
+
+    public virtual ICollection<Telefono>? Telefonos { get; set; }
+
+    [NotMapped]
+    public int Edad { get; set; }
 }
 
-public enum Sexo{
+public enum Sexo
+{
     Masculino,
     Femenino,
     NoEspecificar
 }
 
-public enum EstadoCivil{
+public enum EstadoCivil
+{
     Soltero,
     Casado,
     Viudo,

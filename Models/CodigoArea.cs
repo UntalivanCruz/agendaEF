@@ -1,9 +1,18 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace agenda.Models;
 
 public class CodigoArea
 {
-    public Guid CodigoAreaId {get;set;}
-    public int numero {get;set;}
-    public string ?pais {get;set;}
-    public virtual ICollection<Telefono> ?Telefonos {get;set;}
+    [Key]
+    public Guid CodigoAreaId { get; set; }
+
+    [Required]
+    public int Numero { get; set; }
+
+    [MaxLength(100)]
+    [Required]
+    public string? Pais { get; set; }
+
+    public virtual ICollection<Telefono>? Telefonos { get; set; }
 }
