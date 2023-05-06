@@ -19,7 +19,7 @@ public class Persona
     [MaxLength(100)]
     public string? Alias { get; set; }
 
-    public DateOnly FechaNac { get; set; }
+    public DateTime FechaNac { get; set; }
 
     public Sexo Sexo { get; set; }
 
